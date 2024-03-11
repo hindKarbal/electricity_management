@@ -1,0 +1,10 @@
+date_saisie:2024-01-01
+annee:2023
+id_client:29
+consommation:150
+###
+date_saisie:2024-01-01
+annee:2023
+id_client:33
+consommation:840
+###

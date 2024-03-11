@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    color: #000;
+    text-align: center;
+    padding: 30px; /* Ajout de rembourrage pour les autres sections */
+}
+
+.section1 {
+    height: 400px; /* Hauteur de la première section */
+    background-image: url('images/image4.webp'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+    background-size: cover; /* Ajustement de la taille de l'image */
+    background-position: center; /* Centrage de l'image */
+    display: flex; /* Utilisation de Flexbox pour centrer le contenu verticalement */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    text-align: center; /* Centrage du texte */
+    color: #000; /* Couleur du texte */
+    font-weight: bold;
+}
+
+.section2 {
+    background-color: #060B32;
+    color: #fff; /* Couleur du texte pour la section 2 */
+    font-weight: bold;
+}
+
+.section3 {
+    background-color: #D9D9D9;
+    color: #ff8000; /* Couleur du texte pour la section 3 */
+    height: 460px;
+}
+
+.image-container {
+    border-radius: 20px; /* Coins arrondis */
+    overflow: hidden; /* Pour que les coins arrondis ne débordent pas */
+    float: left; /* Alignement à gauche */
+    margin-right: 20px; /* Espacement du paragraphe */
+}
+
+.image-container img {
+    border-radius: 20px; /* Coins arrondis */
+    width: 100%; /* Ajustement de la largeur de l'image */
+    height: auto; /* Maintenir le rapport hauteur/largeur */
+    margin-bottom: 10px; /* Marge inférieure pour l'espacement */
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s; /* Transition sur la transformation, l'ombre et la bordure */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce par défaut */
+    border: 3px solid transparent; /* Bordure transparente par défaut */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Agrandir l'image au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Augmenter l'ombre au survol */
+    border: 3px solid #ff8000; /* Ajouter une bordure orange au survol */
+}
+
+.text-container {
+    max-width: calc(100% - 420px); /* Taille maximale du conteneur de texte */
+    float: left; /* Alignement à gauche */
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff8000; /* Couleur orange */
+    color: white; /* Couleur du texte */
+    text-decoration: none;
+    border-radius: 5px;
+    display: block; /* Affichage en bloc pour occuper toute la largeur */
+    margin-top: 10px; /* Marge supérieure pour l'espacement */
+   
+}
+
+.btn1 {
+    padding: 10px 10px;
+    background-color: #ff8000; /* Couleur orange */
+    color: white; /* Couleur du texte */
+    text-decoration: none;
+    border-radius: 5px;
+    display: block; /* Affichage en bloc pour occuper toute la largeur */
+    margin-top: 10px; /* Marge supérieure pour l'espacement */
+}
+
+.card {
+    /* Couleur de fond bleue */
+    border-radius: 10px; /* Coins arrondis */
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    padding: 20px;
+    margin: 0 auto; /* Centrer horizontalement */
+    width:500px;
+  }
+
+.card:hover {
+    transform: translateY(-5px); /* Déplacer légèrement la carte vers le haut au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Augmenter l'ombre au survol */
+}
+
+.card img {
+    border-radius: 20px; /* Coins arrondis pour l'image */
+    width: 100%; /* Remplir la largeur de la carte */
+    height: auto; /* Maintenir le rapport hauteur/largeur */
+    margin-bottom: 10px; /* Marge inférieure pour l'espacement */
+}
+
+span {
+    color: #ff8000; /* Couleur orange */
+}
+
+h2 {
+    text-align: center;
+    color: #ff8000; /* Couleur orange */
+}
+
+#btn {
+    padding: 15px 30px; /* Taille moyenne du bouton */
+    background-color: #ff8000; /* Couleur orange */
+    color: white; /* Couleur du texte */
+    text-decoration: none;
+    border-radius: 10px; /* Coins arrondis */
+    display: inline-block; /* Affichage en ligne pour occuper uniquement l'espace nécessaire */
+    margin-top: 20px; /* Marge supérieure pour l'espacement */
+}
+
+#btn:hover {
+    background-color: #ffac4b; /* Couleur orange clair au survol */
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    text-align: left;
+}
+
+.section2 h2,
+.section3 h2 {
+    font-size: 36px; /* Taille de la police */
+    font-style: italic; /* Style de police italique */
+    font-weight: bold; /* Poids de la police en gras */
+    margin-bottom: 30px; /* Marge inférieure */
+    position: relative; /* Position relative pour le titre */
+}
+
+.section2 h2::after,
+.section3 h2::after {
+    content: ""; /* Contenu vide */
+    position: absolute; /* Position absolue */
+    bottom: -5px; /* Décalage vers le bas */
+    left: 50%; /* Décalage vers la gauche de la moitié */
+    transform: translateX(-50%); /* Déplacement horizontal de 50% */
+    /* Épaisseur de la ligne */
+    background-color: #ff8000; /* Couleur de la ligne */
+}
